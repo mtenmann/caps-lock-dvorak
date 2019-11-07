@@ -138,16 +138,16 @@ Capslock & Space::SendInput {Enter Down}
 
 
 ; Numpad using Ctrl+Shift+Alt + m,.jkluio or space
-+^!Space:: SendInput {Numpad0}
-+^!m:: SendInput {Numpad1}
-+^!w:: SendInput {Numpad2}
-+^!v:: SendInput {Numpad3}
-+^!h:: SendInput {Numpad4}
-+^!t:: SendInput {Numpad5}
-+^!n:: SendInput {Numpad6}
-+^!g:: SendInput {Numpad7}
-+^!c:: SendInput {Numpad8}
-+^!r:: SendInput {Numpad9}
++^!Space::send 0   ;SendInput {Numpad0}
++^!m::send 1  ; SendInput {Numpad1}
++^!w::send 2  ; SendInput {Numpad2}
++^!v::send 3  ; SendInput {Numpad3}
++^!h::send 4  ; SendInput {Numpad4}
++^!t::send 5  ; SendInput {Numpad5}
++^!n::send 6  ; SendInput {Numpad6}
++^!g::send 7  ; SendInput {Numpad7}
++^!c::send 8  ; SendInput {Numpad8}
++^!r::send 9  ; SendInput {Numpad9}
 
 
 ; Make Win Key + Capslock work like Capslock (in case it's ever needed)
@@ -201,3 +201,14 @@ WinMove, ahk_id %EWD_MouseWin%,, EWD_WinX + EWD_MouseX - EWD_MouseStartX, EWD_Wi
 EWD_MouseStartX := EWD_MouseX  ; Update for the next timer-call to this subroutine.
 EWD_MouseStartY := EWD_MouseY
 return
+
+
+
+
+
+
+; Other scripts
+
+; Run Firefox
+
+#f:: Run Firefox
