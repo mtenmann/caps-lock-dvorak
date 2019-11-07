@@ -120,9 +120,8 @@ Capslock & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
 
 
 ; Capslock + TAB/; (prev/next tab)
-
-Capslock & ;::SendInput {Ctrl Down}{Tab Down}
-Capslock & ; up::SendInput {Ctrl Up}{Tab Up}
+Capslock & `;::SendInput {Ctrl Down}{Tab Down}
+Capslock & `; up::SendInput {Ctrl Up}{Tab Up}
 Capslock & Tab::SendInput {Ctrl Down}{Shift Down}{Tab Down}
 Capslock & Tab up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
 
